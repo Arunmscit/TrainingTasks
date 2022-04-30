@@ -26,7 +26,9 @@ class _ServiceState extends State<Service> {
                   color: Colors.pink,
                 ),
                 child: MaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
                   child: const Text(
                     'Commander',
                     style: TextStyle(

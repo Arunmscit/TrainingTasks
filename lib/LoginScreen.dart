@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled1/Service.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -96,7 +97,13 @@ class _LoginScreenState extends State<LoginScreen> {
                     color: Colors.pink,
                   ),
                   child: MaterialButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context)=>
+                          const Service()),
+                      );
+                    },
 
                     //padding: EdgeInsets.all(1),
                     child: const Text(
